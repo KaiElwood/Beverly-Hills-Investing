@@ -40,7 +40,7 @@
     width: 100%;
 }
 
-.side-text p {
+.side-text h5 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
