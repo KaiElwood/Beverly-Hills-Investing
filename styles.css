@@ -75,6 +75,12 @@ a img {
     font-size: 6rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .jumbotron .container-video h1 {
+        font-size: 3rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .jumbotron .container-video h1 {
         font-size: 5rem;
