@@ -82,8 +82,24 @@
 
         <!-- container for main elements – use for all elements? -->
         <!-- <div class="container"> -->
-            <div class="bs-example">
-                <!-- <nav class="navbar navbar-expand-md navbar-dark bg-light">
+
+            <!-- jumbotron within container -->
+            <div class="jumbotron jumbotron-fluid">
+
+                <!-- Main video to be played, need poster image -->
+                <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline poster="assets/Optimized-palmtrees_opening_image.png">
+                    <source src="" data-src="assets/1_Palmtrees.mp4" type="video/mp4">
+                </video>
+
+                <div class="container-video">
+                    
+                    <!-- beverly hills invsting logo -->
+                        <!-- <img src="assets/BHI-01.png" alt="Beverly Hills Investing"> -->
+                        <h1>BEVERLY HILLS INVESTING</h1>
+                </div>
+            </div>
+            <div class="mb-5">
+                <nav class="navbar navbar-expand-md navbar-dark bg-light">
                     <div class="container">
                         <a href="#" class="navbar-brand">
                             <img src="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/assets/BHI-01.png" height="52" alt="CoolBrand">
@@ -95,40 +111,23 @@
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <div class="navbar-nav">
                                 <a href="#ourStrategy" class="nav-item nav-link active">Our Strategy</a>
-                                <a href="#" class="nav-item nav-link">Returns Calculator</a>
-                                <a href="#" class="nav-item nav-link">Who We Are</a>
+                                <a href="#calculator" class="nav-item nav-link">Returns Calculator</a>
+                                <a href="#CEO" class="nav-item nav-link">Who We Are</a>
                             </div>
                             <div class="navbar-nav ml-auto nav-pills">
-                                <a href="#" class="nav-item nav-link active">Invest Today</a>
+                                <a href="#investToday" class="nav-item nav-link active">Invest Today</a>
                             </div>
                         </div>
                     </div> 
-                </nav> -->
-            </div>
-
-            <!-- jumbotron within container -->
-            <div class="jumbotron jumbotron-fluid">
-
-                <!-- Main video to be played, need poster image -->
-                <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline poster="assets/Optimized-palmtrees_opening_image.png">
-                    <source src="" data-src="assets/1_Palmtrees.mp4" type="video/mp4">
-                </video>
-
-                <div class="container container-video">
-                    
-                    <!-- beverly hills invsting logo -->
-                    <div class="logo-container">
-                        <img src="assets/BHI-01.png" alt="Beverly Hills Investing">
-                    </div>
-                </div>
+                </nav>
             </div>
         <div class="container">
             <div class="row mb-5" id="ourStrategy">
                 <div class="md-col-2"></div>
-                <div class="col-6 md-col-4 side-text">
-                    <h5 class="text-center align-middle"><span>We buy houses </span>for <em>below</em> the fair market value...</h5>
+                <div class="col-sm-6 side-text">
+                    <h5 class="text-center align-middle"><span>We buy houses </span>for <span><em>below</em></span> the fair market value...</h5>
                 </div>
-                <div class="col-6 md-col-4">
+                <div class="col-sm-6">
                     <div class="img-box">
                         <img src="assets/Optimized-ugly-Home-AdobeStock_141575681.jpeg" alt="Ugly Home">
                     </div>
@@ -138,23 +137,23 @@
 
             <div class="row mb-5">
                 <div class="md-col-2"></div>
-                <div class="col-6 md-col-4 side-text">
-                    <h5 class="text-center align-middle"><span>Refurbish </span>them...</h5>
-                </div>
-                <div class="col-6 md-col-4">
+                <div class="col-sm-6">
                     <div class="img-box">
                         <img src="assets/Optimized-beautiful-home-AdobeStock_226192979.jpeg" alt="Beautiful Home">
                     </div>
+                </div>
+                <div class="col-sm-6 side-text">
+                    <h5 class="text-center align-middle"><span>Refurbish </span>them...</h5>
                 </div>
                 <div class="md-col-2"></div>
             </div>
 
             <div class="row mb-5">
                 <div class="md-col-2"></div>
-                <div class="col-6 md-col-4 side-text">
+                <div class="col-sm-6 side-text">
                     <h5 class="text-center align-middle"><span>And sell </span>them for a <span><em>profit</em></span></h5>
                 </div>
-                <div class="col-6 md-col-4">
+                <div class="col-sm-6">
                     <div class="s-video">
                         <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline poster="assets/Optimized-car_poster.png">
                             <source src="" data-src="assets/2_ManDriving_short.mp4" type="video/mp4">
@@ -168,7 +167,7 @@
                 <div class="col-12 mb-5 text-center">
                     <h1>WITH OVER 35 YEARS EXPERIENCE INVEST WITH US AND GET A 17% RETURN ON YOUR INVESTMENT* </h1>
                 </div>
-                <div class="m-auto card text-center visualizer">
+                <div id="calculator" class="m-auto card text-center visualizer">
                     <h4 class="card-header">See how much money you could* make with the Beverly Hills Investments portfolio analysis tool:</h4>
                     <div class="card-body">
                         <h5 class="card-title">Insert amount to invest and <em>Grow</em></h5>
@@ -197,7 +196,7 @@
                 </div>
             </div>
             
-            <div class="row mb-5">
+            <div class="row mb-5" id="CEO">
                 <div class="col-12">
                     <div class="s-video">
                         <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline poster="assets/Optimized-shadow_outline.png">
@@ -211,7 +210,7 @@
                 </div>
             </div>
 
-            <a class="btn btn-dark btn-lg btn-block p-5 m-5" href="page2.html" role="button">Click <em>Here</em> to Invest and Learn More!</a>
+            <a class="btn btn-dark btn-lg btn-block p-5 m-5" href="page2.html" id="investToday" role="button">Click <em>Here</em> to Invest and Learn More!</a>
 
             <div class="row mb-5">
                 <div class="col-12 text-left">
