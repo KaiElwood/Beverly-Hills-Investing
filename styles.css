@@ -3,6 +3,10 @@ redish rgb(229, 48, 60)
 less red rgb(237, 94, 70)
 faded yellow rgb(245, 173, 90)*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Kumbh Sans', sans-serif;
     background: antiquewhite;
@@ -85,6 +89,10 @@ a img {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.side-text h5 span {
+    font-size: 2em;
 }
 
 .promissory-note-box {
