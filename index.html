@@ -28,6 +28,28 @@
 
             }
             window.onload = deferVideo;
+
+            function growMoney(){
+                debugger;
+                // $("inputMoney").value = 40;
+                var startMoney = document.getElementById("inputMoney").value;
+                var returnMoney = document.getElementById("return");
+
+                function calcReturn(n1) {
+                    return (parseInt(n1) + (parseInt(n1) * 0.175));
+                }
+                // var startMoney = $("inputMoney").val();
+                var totalReturn = (calcReturn(startMoney));
+                // returnMoney.innerText = totalReturn;
+                moneyVisualization = "";
+                for(i=0; i<(totalReturn-startMoney); i+=20){
+                    moneyVisualization += "💰 ";
+                };
+
+                var finalMoneyBags = "Your final* portfolio balance: " + totalReturn + "\n \n That's this much more than your initial investment! " + moneyVisualization + "\n \n *DISCLAIMER: return calculator is not exact.";
+
+                document.getElementById("moneyBags").innerText = finalMoneyBags;
+            }
         </script>
     </head>
     <body>
@@ -42,7 +64,7 @@
             <div class="jumbotron jumbotron-fluid">
 
                 <!-- Main video to be played, need poster image -->
-                <video autoplay muted loop poster="https://ichef.bbci.co.uk/news/1024/cpsprodpb/69CF/production/_111278072_coronavirus_poster_index_2_promo_976.png">
+                <video autoplay muted loop poster="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/Optimized-palmtrees_opening_image.png">
                     <source src="" data-src="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/1_Palmtrees.mp4" type="video/mp4">
                 </video>
 
@@ -50,7 +72,7 @@
                     
                     <!-- beverly hills invsting logo -->
                     <div class="logo-container">
-                        <img src="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/BHI_Logo_V2.jpg" alt="Beverly Hills Investing">
+                        <img src="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/BHI-01.png" alt="Beverly Hills Investing">
                     </div>
                 </div>
             </div>
@@ -88,7 +110,7 @@
                 </div>
                 <div class="col-6 md-col-4">
                     <div class="s-video">
-                        <video autoplay muted loop poster="https://ichef.bbci.co.uk/news/1024/cpsprodpb/69CF/production/_111278072_coronavirus_poster_index_2_promo_976.png">
+                        <video autoplay muted loop poster="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/Optimized-car_poster.png">
                             <source src="" data-src="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/2_ManDriving_short.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -107,12 +129,14 @@
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <span class="input-group-text">$</span>
-                              <span class="input-group-text">0.00</span>
                             </div>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <input id="inputMoney" type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
                         </div>
-                        <a href="#" class="btn btn-success">Grow My Money</a>
-                      </div>
+                        <button onclick="growMoney()" class="btn btn-success">Grow My Money</button>
+
+                        <div id="moneyBags" class="mt-3">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -130,7 +154,7 @@
             <div class="row mb-5">
                 <div class="col-12">
                     <div class="s-video">
-                        <video autoplay muted loop poster="https://ichef.bbci.co.uk/news/1024/cpsprodpb/69CF/production/_111278072_coronavirus_poster_index_2_promo_976.png">
+                        <video autoplay muted loop poster="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/Optimized-shadow_outline.png">
                             <source src="" data-src="/Users/kaifinney/Documents/GitHub/Beverly-Hills-Investing/3_SilluetteVideo.mp4" type="video/mp4">
                         </video>
                     </div>

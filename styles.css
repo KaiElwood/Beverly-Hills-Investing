@@ -29,6 +29,7 @@
 
 .logo-container img {
     width: 100%;
+    background: white;
 }
 
 .img-box {
@@ -68,4 +69,8 @@
 
 .btn-block {
     width: unset;
+}
+
+.noShow {
+    display: none;
 }
