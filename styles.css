@@ -72,7 +72,7 @@ a img {
 
 @media only screen and (max-width: 600px) {
     .jumbotron .container-video h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
