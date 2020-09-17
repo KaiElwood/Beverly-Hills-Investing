@@ -9,12 +9,7 @@ html {
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    background: #faebd7;
-}
-
-.btn-success {
-    background-color: antiquewhite;
-    border-color: antiquewhite;
+    background: #fcfbf4;
 }
 
 .jumbotron {
@@ -127,6 +122,7 @@ a img {
 .promissory-note {
     width: 100%;
     object-fit: cover;
+    background: rgb(114, 114, 114);
 }
 
 .s-video video {
